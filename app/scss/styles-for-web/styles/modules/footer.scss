@@ -1,0 +1,35 @@
+footer {
+	background-color: $dark-grey;
+	margin-top: 2rem;
+	height: 100%;
+	.container {
+		img {
+			margin-left: 50%;
+			transform: translateX(-50%);
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+		.horizontal {
+			height: 1px;
+			background-color: rgba(153,153,153,0.1);
+		}
+		.row {
+			padding: 1.2rem;
+			.col {
+				border-left: 2px solid rgba(153,153,153,0.5);
+				color: #999999;
+				font-size: $font-size4;
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
+			}
+		}
+		.copyright {
+			font-size: $font-size1;
+			color: #999999;
+			margin-top: 1.5rem;
+			padding-bottom: 0.5rem;
+		}
+	}
+}

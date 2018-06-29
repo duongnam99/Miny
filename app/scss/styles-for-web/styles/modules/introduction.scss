@@ -1,0 +1,28 @@
+.introduction {
+	background: white;
+	margin-top: 2rem;
+	.container {
+		.big-title {
+			font-size: $font-size7;
+			font-weight: $font-regular;
+			padding-top: 1rem;
+		}
+		.row {
+			margin-top: 3rem;
+			img {
+				margin-left: 50%;
+				transform: translateX(-50%);
+			}
+			.title {
+				font-size: $font-size6;
+				margin-top: 1rem;
+			}
+			.detail {
+				font-size: $font-size2;
+				margin-top: 0.4rem;
+				color: #999999;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
