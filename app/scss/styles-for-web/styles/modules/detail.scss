@@ -59,16 +59,18 @@
 					}
 					.horizontal{
 						.horizontal-short{
-							width: 20%;
-							height: 3px;
-							background-color: $yellow;
-							margin-top: -3px;
+							// width: 20%;
+							// height: 3px;
+							// background-color: $yellow;
+							// margin-top: -3px;
+							@include horizontal-short(20%);
 						}
 						.horizontal-long {
-							height: 1px;
-							width: 100%;
-							background-color: $grey;
-							margin-top: 7px;
+							// height: 1px;
+							// width: 100%;
+							// background-color: $grey;
+							// margin-top: 7px;
+							@extend %horizontal-long;
 						}
 					}	
 					.name {

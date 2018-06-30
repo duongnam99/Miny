@@ -26,16 +26,10 @@
 		}
 		.horizontal{
 			.horizontal-short{
-				width: 4rem;
-				height: 3px;
-				background-color: $yellow;
-				margin-top: -3px;
+				@include horizontal-short(4rem);
 			}
 			.horizontal-long {
-				height: 1px;
-				width: 100%;
-				background-color: $grey;
-				margin-top: 7px;
+				@extend %horizontal-long;
 			}
 		}	
 		.content {
@@ -44,7 +38,7 @@
 				.card-body {
 					.card-title {
 						a {
-							text-decoration: none;
+							// text-decoration: none;
 							color: inherit;
 						}
 						font-size: $font-size5;
@@ -55,7 +49,7 @@
 						margin-bottom: 1rem;
 						a {
 							color: $color1;
-							text-decoration: none;
+							// text-decoration: none;
 							font-size: $font-size5;
 							font-weight: $font-medium;
 						}

@@ -1,0 +1,13 @@
+@mixin horizontal-short($width) {
+	width: $width;
+	height: 3px;
+	background-color: $yellow;
+	margin-top: -3px;
+}
+%horizontal-long {
+	height: 1px;
+	width: 100%;
+	background-color: $grey;
+	margin-top: 7px;
+}
+

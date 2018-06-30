@@ -4059,6 +4059,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .collapsing {
       transition: none; } }
 
+.main .container .horizontal .horizontal-long, .detail-search .container .row .left .horizontal .horizontal-long, .detail-search .container .row .right .more .horizontal .horizontal-long, .detail .container .row .right .more .horizontal .horizontal-long {
+  height: 1px;
+  width: 100%;
+  background-color: #dddddd;
+  margin-top: 7px; }
+
 header .header1 {
   height: 3.8rem;
   background: white; }
@@ -4162,11 +4168,6 @@ header .header2 {
     height: 3px;
     background-color: #ff9900;
     margin-top: -3px; }
-  .main .container .horizontal .horizontal-long {
-    height: 1px;
-    width: 100%;
-    background-color: #dddddd;
-    margin-top: 7px; }
   .main .container .content {
     margin-top: 1.5rem; }
     .main .container .content .card .card-body .card-title {
@@ -4174,13 +4175,11 @@ header .header2 {
       font-weight: 500;
       color: #333333; }
       .main .container .content .card .card-body .card-title a {
-        text-decoration: none;
         color: inherit; }
     .main .container .content .card .card-body .card-text.info {
       margin-bottom: 1rem; }
       .main .container .content .card .card-body .card-text.info a {
         color: #00a888;
-        text-decoration: none;
         font-size: 17px;
         font-weight: 500; }
       .main .container .content .card .card-body .card-text.info .feedback {
@@ -4234,7 +4233,6 @@ footer {
       color: #999999;
       font-size: 15px; }
       footer .container .row .col a {
-        text-decoration: none;
         color: inherit; }
   footer .container .copyright {
     font-size: 12px;
@@ -4302,11 +4300,6 @@ html, body {
       height: 3px;
       background-color: #ff9900;
       margin-top: -3px; }
-    .detail-search .container .row .left .horizontal .horizontal-long {
-      height: 1px;
-      width: 100%;
-      background-color: #dddddd;
-      margin-top: 7px; }
     .detail-search .container .row .left .content {
       margin-top: 1.5rem; }
       .detail-search .container .row .left .content .card .card-body .card-title {
@@ -4345,11 +4338,6 @@ html, body {
         height: 3px;
         background-color: #ff9900;
         margin-top: -3px; }
-      .detail-search .container .row .right .more .horizontal .horizontal-long {
-        height: 1px;
-        width: 100%;
-        background-color: #dddddd;
-        margin-top: 7px; }
       .detail-search .container .row .right .more .name {
         margin-top: 1.5rem;
         color: #00a888; }
@@ -4412,11 +4400,6 @@ html, body {
         height: 3px;
         background-color: #ff9900;
         margin-top: -3px; }
-      .detail .container .row .right .more .horizontal .horizontal-long {
-        height: 1px;
-        width: 100%;
-        background-color: #dddddd;
-        margin-top: 7px; }
       .detail .container .row .right .more .name {
         margin-top: 2rem;
         font-size: 15px;
