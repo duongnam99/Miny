@@ -9,7 +9,10 @@
 			border-radius: 50%;
 			margin-right: 0.5rem;
 			text-decoration: none;
-			color: $light-grey2;
+			color: $light-grey2;	
+			&:hover {
+				background-color: $color2;
+			}
 			li {
 				margin-top: 0.5rem;
 			}
