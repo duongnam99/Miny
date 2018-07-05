@@ -3592,7 +3592,8 @@ html, body {
     text-decoration: none;
     color: #999999; }
     .pagination .number a:hover {
-      background-color: #ffaa00; }
+      background-color: #ffaa00;
+      color: white; }
     .pagination .number a li {
       margin-top: 0.5rem; }
   .pagination .number .active {
