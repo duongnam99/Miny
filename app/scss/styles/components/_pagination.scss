@@ -1,0 +1,22 @@
+.pagination {
+	// margin-top: 2rem;
+	.number {
+		list-style: none;
+		a {
+			width: 2.5rem;
+			height: 2.5rem;
+			background-color: white;
+			border-radius: 50%;
+			margin-right: 0.5rem;
+			text-decoration: none;
+			color: $light-grey2;
+			li {
+				margin-top: 0.5rem;
+			}
+		}
+		.active {
+			background-color: $color2;
+			color: white;
+		}
+	}
+}

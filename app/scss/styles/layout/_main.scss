@@ -1,0 +1,32 @@
+.main {
+	.container {
+		margin-top: 2rem;
+		.title {
+			.big-title {
+				font-size: $font-size7;
+				font-weight: $font-regular;
+				a {
+					text-decoration: none;		
+					color: inherit;
+				}
+			}
+			.categorize {
+				margin-left: 10%;
+				margin-top: 0.3rem;
+				
+			}
+			.watch-all {
+				margin-top: 1rem;
+				color: $color1;
+			}
+		}
+		.horizontal{
+			.horizontal-short{
+				@include horizontal-short(4rem);
+			}
+			.horizontal-long {
+				@extend %horizontal-long;
+			}
+		}	
+	}
+}

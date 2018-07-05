@@ -1,0 +1,35 @@
+.content {
+	margin-top: 1.5rem;		
+	.card {
+		.card-body {
+			.card-title {
+				a {
+					color: inherit;
+				}
+				font-size: $font-size5;
+				font-weight: $font-medium;
+				color: #333333;
+			}
+			.card-text.info {
+				a {
+					color: $color1;
+					font-size: $font-size2;
+					font-weight: $font-medium;
+				}
+				.feedback {
+					font-size: $font-size2;
+					font-weight: $font-regular;
+					color: $light-grey2;
+					.saw {
+						margin-right: 1rem;
+					}
+				}
+			}
+			.card-text.demo {
+				font-size: $font-size2;
+				font-weight: $font-regular;
+				color: #666666;
+			}
+		}
+	}
+}

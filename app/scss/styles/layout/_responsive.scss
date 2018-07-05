@@ -12,11 +12,21 @@
 					.small-nav {
 						display: none;
 					}
-					.input-group {
-						width: 30%;
-						height: 2rem;
+					.search {
+						img {
+							margin-right: 0.5em;
+						}
+						input {
+							width: 0;
+							padding-top: 0.3rem;
+							&:focus {
+								width: 150px;
+							}
+						}
 					}
-
+					.search:hover input {
+						width: 150px;
+					}
 				}
 			}
 		}
@@ -30,13 +40,6 @@
 							border: 0;
 							.container {
 								width: 100%;
-								// .row {
-								// 	.col {
-								// 		.dropdown-content {
-
-								// 		}
-								// 	}
-								// }
 							}
 						}
 					}
@@ -96,12 +99,27 @@
 	}
 }
 @media (max-width: 768px) {
-	.detail,.detail-search {
+	.detail,.search {
 		.container {
 			.row {
 				.left {
 					width: 100%;
 					margin-left: 0;
+					.row.title  {
+						.big-title {
+							font-size: $font-size6;
+							margin-left: 15px;
+						}	
+						.watch-all {
+							font-size: $font-size3;
+							margin-top: 0.3rem;
+							margin-right: 15px;
+						}
+					}
+					.row.horizontal {
+						margin-bottom: 30px;
+						margin-left: 0px;
+					}
 				}
 				.right {
 					width: 100%;

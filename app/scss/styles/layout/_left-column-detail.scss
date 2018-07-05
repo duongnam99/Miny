@@ -1,0 +1,46 @@
+.detail .left {
+	width: 67%;
+	margin-left: 15px;
+	.wrapper {
+		background-color: white;
+		padding: 1rem 15px; 
+		.info {
+			margin-bottom: 2rem;
+			.author {
+				.avatar {
+					width: 2rem;
+					height: 2rem;
+					background-color: $yellow;
+					border-radius: 50%;
+				}
+				.name {
+					font-size: $font-size2;
+					color: $color1;
+					margin-top: 0.4rem;
+					margin-left: 0.5rem;
+					a {
+						color: inherit;
+					}
+				}
+			}
+			.feedback {
+				margin-top: 0.4rem;
+				font-size: $font-size2;
+				color: $light-grey2;
+				.saw {
+					margin-right: 1rem;
+				}
+				.heart {
+					
+				}
+			}
+		}
+		.content {
+			width: 85%;
+			margin: auto;
+			p {
+				font-size: $font-size4;
+			}
+		}
+	}			
+}

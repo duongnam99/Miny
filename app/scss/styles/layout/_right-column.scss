@@ -1,0 +1,30 @@
+.right {
+	width: 28%;
+	margin-right: 15px;
+	.more {
+		padding: 1rem 30px;
+		background-color: white;
+		// margin-bottom: 1rem;
+		.title  {
+			font-size: $font-size5;
+			font-weight: $font-medium;
+		}
+		.horizontal{
+			.horizontal-short{
+				@include horizontal-short(20%);
+			}
+			.horizontal-long {
+				@extend %horizontal-long;
+			}
+		}	
+		.name {
+			margin-top: 2rem;
+			font-size: $font-size4;
+			color: $color1;
+			a {
+				color: inherit;
+			}
+		}
+	}
+	
+}

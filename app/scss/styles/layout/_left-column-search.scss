@@ -1,0 +1,37 @@
+.search .left {
+	width: 67%;
+	margin-left: 15px;	
+	.wrapper {
+		padding: 0 15px;
+		.title {
+			.big-title {
+				font-size: $font-size7;
+				font-weight: $font-regular;
+				a {
+					text-decoration: none;		
+					color: inherit;
+				}
+			}
+			.categorize {
+				margin-left: 4em;
+				margin-top: 0.3em;
+			}
+			.watch-all {
+				margin-top: 1rem;
+				color: $color1;
+			}
+		}
+		.horizontal{
+			.horizontal-short{
+				@include horizontal-short(10%);
+			}
+			.horizontal-long {
+				@extend %horizontal-long;
+			}
+		}	
+		
+	}
+}	
+.opc {
+	opacity: 0.5;
+}

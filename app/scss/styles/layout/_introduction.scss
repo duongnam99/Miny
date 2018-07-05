@@ -1,6 +1,8 @@
 .introduction {
 	background: white;
+	padding-bottom: 2rem;
 	margin-top: 2rem;
+	margin-bottom: -2rem;
 	.container {
 		.big-title {
 			font-size: $font-size7;
@@ -20,7 +22,7 @@
 			.detail {
 				font-size: $font-size2;
 				margin-top: 0.4rem;
-				color: #999999;
+				color: $light-grey2;
 				margin-bottom: 1rem;
 			}
 		}

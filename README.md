@@ -8,6 +8,8 @@
 - [Trang chủ](https://duongnam99.github.io/Miny-project/dist/trangchu.html)
 - [Trang chi tiết](https://duongnam99.github.io/Miny-project/dist/chitiet.html)
 - [Trang tìm kiếm](https://duongnam99.github.io/Miny-project/dist/timkiem.html)
+- [Trang lớp 9](https://duongnam99.github.io/Miny-project/dist/lop9.html)
+- [Trang soạn văn](https://duongnam99.github.io/Miny-project/dist/soanvan.html)
 
 ## Kiến thức nắm được
 - Workflow với gulp và sass
