@@ -3533,9 +3533,9 @@ html, body {
   background-color: #f1f1f1;
   z-index: 1; }
 
-.search .advertisement {
+.search .advertisement, .detail .advertisement {
   margin-top: 3rem; }
-  .search .advertisement img {
+  .search .advertisement img, .detail .advertisement img {
     display: block;
     width: 100%; }
 
@@ -3607,6 +3607,12 @@ html, body {
   background-position: center center;
   margin-bottom: 3rem; }
 
+.bg-margin {
+  margin-top: 50px; }
+
+.bg-margin2 {
+  margin-top: 44px; }
+
 .bg-header2 {
   height: 97px;
   background-image: url(../images/bg-header2.png);
@@ -3652,32 +3658,33 @@ header .header1 {
       header .header1 .container .row .search input:focus {
         width: 300px; }
 
-header .header2 {
+header nav.navbar {
   background: #ff9900;
   font-size: 15px;
   font-weight: 500;
-  color: white; }
-  header .header2 .container .navbar {
-    padding: 0; }
-  header .header2 .container .row {
-    padding-top: 0;
-    padding-bottom: 0; }
-    header .header2 .container .row .navbar-toggler {
-      background-color: #ffad33; }
-      header .header2 .container .row .navbar-toggler .navbar-toggler-icon {
-        background-color: red; }
-    header .header2 .container .row .navbar-collapse .first-col {
-      border-left: 2px solid #ffad33; }
-    header .header2 .container .row .navbar-collapse .col {
-      padding: 0.9rem 0;
-      text-align: center;
-      border-right: 2px solid #ffad33; }
-      header .header2 .container .row .navbar-collapse .col:hover {
-        cursor: pointer;
-        background-color: #ffaa00; }
+  color: white;
+  padding-top: 0;
+  padding-bottom: 0; }
+  header nav.navbar .container .navbar-toggler {
+    border-radius: 0;
+    background-color: #ffad33; }
+    header nav.navbar .container .navbar-toggler .navbar-toggler-icon {
+      background-color: red; }
+  header nav.navbar .container .navbar-collapse .first-col {
+    border-left: 2px solid #ffad33; }
+  header nav.navbar .container .navbar-collapse .col-lg {
+    padding: 0.9rem 0;
+    text-align: center;
+    border-right: 2px solid #ffad33; }
+    header nav.navbar .container .navbar-collapse .col-lg:hover {
+      cursor: pointer;
+      background-color: #ffaa00; }
 
 .dropbtn {
   position: relative; }
+  .dropbtn a {
+    text-decoration: none;
+    color: inherit; }
   .dropbtn:hover .container {
     display: block; }
   .dropbtn .container {
@@ -3713,6 +3720,21 @@ header .header2 {
 
 .dropbtn .container.last {
   right: 0; }
+
+.menu-change {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0; }
+
+.menu-change2 {
+  animation: go-in 0.3s ease-out; }
+
+@keyframes go-in {
+  from {
+    top: -50px; }
+  to {
+    top: 0px; } }
 
 footer {
   background-color: #2f3b4d;
@@ -3879,12 +3901,14 @@ footer {
         width: 150px; }
     header .header1 .container .row .search:hover input {
       width: 150px; }
-  header .header2 {
+  header nav.navbar {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem; }
-    header .header2 .container .navbar .navbar-collapse .col.dropbtn {
+    header nav.navbar .container .navbar-collapse .col-lg.dropbtn {
       border: 0; }
-      header .header2 .container .navbar .navbar-collapse .col.dropbtn .container {
+      header nav.navbar .container .navbar-collapse .col-lg.dropbtn a.disabled {
+        pointer-events: none; }
+      header nav.navbar .container .navbar-collapse .col-lg.dropbtn .container {
         width: 100%; }
   .bg-header2 {
     height: 150px; }
@@ -3906,6 +3930,8 @@ footer {
   .dropbtn .container .row .dropdown-content a {
     margin-top: 0.5rem;
     margin-bottom: 0; }
+  .detail .content, .search .content {
+    margin-top: 0; }
   footer .container img {
     margin-top: 1rem;
     margin-bottom: 1rem; } }
@@ -3929,3 +3955,21 @@ footer {
     margin-right: 0; }
     .detail .container .row .right .advertisement img, .search .container .row .right .advertisement img {
       display: none; } }
+
+@media (max-width: 576px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #ff9900;
+    z-index: 2;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: translateX(100%);
+    transform: translateX(-120%); }
+  .offcanvas-collapse.open {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem); } }

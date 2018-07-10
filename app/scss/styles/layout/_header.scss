@@ -35,37 +35,34 @@ header {
 			}
 		}
 	}
-	.header2 {
+	nav.navbar {
 		background: $yellow;
 		font-size: 15px;
 		font-weight: 500;
 		color: white;
+		padding-top: 0;
+		padding-bottom: 0;
 		.container {
-			.navbar {
-				padding: 0;
-			}
-			.row {
-				padding-top: 0;
-				padding-bottom: 0;
-				.navbar-toggler {
-					background-color: $color3;
-					.navbar-toggler-icon {
-						background-color: red;
-					}
+			.navbar-toggler {
+				border-radius: 0;
+				background-color: $color3;
+				.navbar-toggler-icon {
+					background-color: red;
 				}
-				.navbar-collapse {
-					.first-col {
-						border-left: 2px solid $color3;
+			}
+			.navbar-collapse {
+				.first-col {
+					border-left: 2px solid $color3;
+				}
+				.col-lg {
+					&:hover {
+						cursor: pointer;
+						background-color: #ffaa00;
 					}
-					.col {
-						&:hover {
-							cursor: pointer;
-							background-color: #ffaa00;
-						}
-						padding: 0.9rem 0;
-						text-align: center;
-						border-right: 2px solid $color3;
-					}
+					padding: 0.9rem 0;
+					text-align: center;
+					border-right: 2px solid $color3;
+
 				}
 			}
 		}
@@ -73,6 +70,10 @@ header {
 	
 }
 .dropbtn {
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 	position: relative;
 	&:hover {
 		.container {
@@ -121,5 +122,25 @@ header {
 .dropbtn {
 	.container.last {
 		right: 0;
+	}
+}
+.menu-change {
+	position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    // transition: 0.4s;
+}
+.menu-change2 {
+	animation: go-in 0.3s ease-out;
+}
+@keyframes go-in  {
+	from {
+		top: -50px;
+		// opacity: 0.5;
+	}
+	to {
+		top: 0px;
+		// opacity: 1;
 	}
 }
